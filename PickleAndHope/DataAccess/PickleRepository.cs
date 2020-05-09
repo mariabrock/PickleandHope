@@ -43,7 +43,7 @@ namespace PickleAndHope.DataAccess
 
         public Pickle Update(Pickle pickle)
         {
-
+            // this is the query
             var sql = @"update Pickle
                         set NumberInStock = NumberInStock + @NewStock
                         output inserted.*
@@ -105,6 +105,11 @@ namespace PickleAndHope.DataAccess
                 return pickle;
 
             }
+        }
+        
+        public void Test()
+        {
+            var greeting =  "hi";
         }
     }
 }
